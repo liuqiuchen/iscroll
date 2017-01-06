@@ -1,0 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html {
+	font-size: 87.5%; /* 14 / 16*/
+}

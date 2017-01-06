@@ -1,0 +1,43 @@
+#wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 1.42857rem;
+  width: 100%;
+  height: 14.28571rem;
+  border: 1px solid orange;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#scroller {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+#scroller li {
+  width: 100%;
+  height: 3.57143rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.14286rem; }
+
+#footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 2.85714rem;
+  border-top: 1px solid #cccccc; }
+
+@media screen and (min-width: 542px) {
+  #wrapper,
+  #footer {
+    width: 542px; } }
