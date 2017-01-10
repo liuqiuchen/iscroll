@@ -4,8 +4,7 @@ var myScroll = new IScroll('#wrapper', {
 	scrollbars: true
 });
 
-var scrollBody = $('#scroller');
-var eleHeight = scrollBody.find('li').height();
+var eleHeight = $('#scroller li').height();
 
 $('.btn1').on('click', function () {
 	// 擦除动画的类型选项有：quadratic, circular, back, bounce, elastic。
@@ -14,4 +13,12 @@ $('.btn1').on('click', function () {
 
 $('.btn2').on('click', function () {
 	myScroll.scrollBy(0, -10, 500, IScroll.utils.ease.circular);
+});
+
+$('.btn3').on('click', function () {
+	myScroll.scrollToElement('.item5');
+});
+
+$('.btn4').on('click', function () {
+	myScroll.destroy();
 });
